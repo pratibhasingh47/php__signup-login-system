@@ -26,6 +26,7 @@ function get_email( object $pdo ,string $emai ){
     return $result; 
 }
 
+
 function set_user( object $pdo,string $pwd ,string $username ,string $email){
 
     $query = "INSERT INTO users ( username , pwd , email ) VALUES (:username . :pwd , :email);";
