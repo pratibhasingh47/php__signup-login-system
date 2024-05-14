@@ -12,13 +12,13 @@ require_once 'includes/config_session.inc.php';
 </head>
 <body>
     
-    <!-- <h3>Login</h3>
+    <h3>Login</h3>
 
     <form action="includes/login.inc.php" method="post" >
         <input type="text" name="username" placeholder="Username">
         <input type="text" name="pwd" placeholder="Password">
         <button>Login</button>
-    </form> -->
+    </form>
 
     <h3>Sign Up</h3>
 
