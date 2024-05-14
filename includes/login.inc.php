@@ -30,7 +30,7 @@ if ( $_SERVER["REQUEST_METHOD"] ==="POST" ){
         require_once 'config_session.inc.php';
 
         if($errors){
-            $_SESSION["error_signup"] = $errors;
+            $_SESSION["error_login"] = $errors;
             header("Location: ../index.php");
             die();
         }
@@ -46,7 +46,9 @@ if ( $_SERVER["REQUEST_METHOD"] ==="POST" ){
 
         header("Location: ../index.php?signup=success");
 
-        
+        $pdo = null;
+        $statement = null;
+        die();
     }
     catch( PDOException $e ){
         die("Query Failed: " . $e->getMessage());
